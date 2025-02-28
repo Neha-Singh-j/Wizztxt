@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+.footer {
+  margin: 0;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer .cont {
+  max-width: 100%;
+  min-width: 100%;
+  padding: 0;
+}
+
+.footer-light {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.footer-dark {
+  background-color: #212529;
+  color: white;
+}
+
+.footer .row {
+  margin: 0;
+  width: 100%;
+}
+
+.footer .col-md-3 {
+  padding: 0 1rem;
+  flex: 1;
+  width:100%;
+}
