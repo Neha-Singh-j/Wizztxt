@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# WizzText - Your Ultimate Text Manipulator 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🔗 [Live Demo](https://wizztxt.vercel.app/)
 
-## Available Scripts
+WizzText is a powerful, lightweight, and user-friendly **text manipulation tool** that allows you to modify and analyze text effortlessly. Whether you need to convert text to **uppercase or lowercase, remove extra spaces, count words and characters, or estimate reading time**, WizzText has you covered!
 
-In the project directory, you can run:
+---
+## ✨ Features
 
-### `npm start`
+✅ **Convert Text Case** – Instantly switch between **uppercase** and **lowercase** text.  
+✅ **Remove Extra Spaces** – Get rid of unwanted spaces and clean up your text.  
+✅ **Clear Text** – Quickly reset the input field with one click.  
+✅ **Word & Character Count** – Get real-time statistics of your text.  
+✅ **Reading Time Estimation** – Know how long it will take to read the given text.  
+✅ **Dark Mode** – Toggle between light and dark themes for better readability.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
+## 🚀 Live Preview
+Check out WizzText in action here:  
+👉 **[WizzText Live Demo](https://wizztxt.vercel.app/)**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
+## 📸 Screenshots
+![image](https://github.com/user-attachments/assets/e26d9e6f-2e45-42f1-bdfd-616435608319)
 
-### `npm test`
+---
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+WizzText is built using the **MERN** stack with additional frontend technologies:
+- **React.js** – Frontend framework
+- **HTML, CSS, JavaScript** – UI styling and functionality
+- **Bootstrap** – Responsive design
+- **Vercel** – Hosting and deployment
 
-### `npm run build`
+---
+## 📥 Installation & Setup
+Want to run WizzText on your local machine? Follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1️⃣ **Clone the repository:**  
+```sh
+git clone https://github.com/your-username/wizztext.git
+cd wizztext
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2️⃣ **Install dependencies:**  
+```sh
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3️⃣ **Start the development server:**  
+```sh
+npm start
+```
 
-### `npm run eject`
+WizzText will now be running on **http://localhost:3000/** 🎉
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
+## 📌 Usage
+1. Type or paste your text into the input box.
+2. Click on **"Convert to Uppercase"** or **"Convert to Lowercase"** as needed.
+3. Use **"Remove Extra Spaces"** to clean up unnecessary spaces.
+4. Click **"Clear Text"** to reset the input field.
+5. Check the **Word Count, Character Count, and Estimated Reading Time**.
+6. Toggle **Dark Mode** for a better experience.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
+## 🚀 Deployment
+WizzText is deployed on **Vercel** for instant access. You can deploy your own version by running:
+```sh
+vercel --prod
+```
 
-## Learn More
+---
+## 🏆 Contributing
+We welcome contributions! Feel free to submit pull requests and enhance the project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -m "Added new feature"`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Open a **Pull Request**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+## 📜 License
+This project is **MIT Licensed** – Feel free to use and modify it as needed.
 
-### Code Splitting
+---
+## 📞 Contact
+Have any questions or feedback? 
+Reach out to us:
+📩 Email: neha.singh.888.j@gmail.com   
+📌 GitHub: https://github.com/Neha-Singh-j
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+🎉 **Try WizzText now and enhance your text editing experience!** 🚀
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
