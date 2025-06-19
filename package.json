@@ -9,6 +9,7 @@
     "gsap": "^3.13.0",
     "gtts": "^0.2.1",
     "jspdf": "^3.0.1",
+    "next": "^15.3.4",
     "prism-react-renderer": "^2.4.1",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
