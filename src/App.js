@@ -3,63 +3,73 @@ import Alert from "./components/Alert";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MarkdownEditor from './components/MarkdownEditor';
+import Footer from './components/Footer';
+
 function App() {
-  const [mode, setMode] = useState("light"); //whether dark mode is enabled or not
+  const [mode, setMode] = useState(() => {
+    return localStorage.getItem('mode') || 
+           (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  });
   const [alert, setAlert] = useState(null);
+
+  useEffect(() => {
+    document.body.style.backgroundColor = mode === 'dark' ? '#05182c' : 'white';
+    document.documentElement.classList.toggle('dark', mode === 'dark');
+    localStorage.setItem('mode', mode);
+  }, [mode]);
+
   const toggleMode = () => {
-    if (mode === "light") {
-      setMode("dark");
-      document.body.style.backgroundColor = "#05182c";
-      showAlert("Dark mode enabled successfully", "success");
-    } else {
-      setMode("light");
-      document.body.style.backgroundColor = "white";
-      showAlert("Light mode enabled successfully", "success");
-    }
+    const newMode = mode === 'light' ? 'dark' : 'light';
+    setMode(newMode);
+    showAlert(`${newMode === 'dark' ? 'Dark' : 'Light'} mode enabled`, "success");
   };
 
   const showAlert = (message, type) => {
-    setAlert({
-      msg: message,
-      type: type,
-    });
-    setTimeout(() => {
-      setAlert(null);
-    }, 1500);
+    setAlert({ msg: message, type });
+    setTimeout(() => setAlert(null), 1500);
   };
 
   return (
-    <>
-      {/* <Navbar title="WizzText" aboutText="About TextUtils"/> */}
-      {/* <Navbar/> */}
-      <Router>
-        <Navbar title="WizzText" mode={mode} toggleMode={toggleMode} />
+    <Router>
+      <div className={`flex flex-col min-h-screen transition-colors duration-300 ${mode === 'dark' ? 'dark bg-gray-900' : 'bg-white'}`}>
+        <Navbar 
+          title="WizzText" 
+          mode={mode} 
+          toggleMode={toggleMode} 
+          showAlert={showAlert}
+        />
+        
         <Alert alert={alert} />
-        <div className="container my-3">
+        
+        <main className="flex-grow container mx-auto p-4">
           <Routes>
-            <Route path="/">
-              <Route
-                index
-                element={
-                  <Textform
-                    showAlert={showAlert}
-                    heading="Enter the text to analyse"
-                    mode={mode}
-                  />
-                }
+            <Route path="/" element={
+              <Textform
+                showAlert={showAlert}
+                heading="Enter the text to analyse"
+                mode={mode}
               />
-              {/* /users--->Component1
-              /users/home--->Component 2    this is why exact should be used for matching exact path */}
-              <Route exact path="/about" element={<About />} />
-            </Route>
+            } />
+            
+            <Route path="/about" element={
+              <About mode={mode} />
+            } />
+            
+            <Route path="/markdown" element={
+              <MarkdownEditor 
+                mode={mode} 
+                showAlert={showAlert}
+              />
+            } />
           </Routes>
-          {/* <About/> */}
-        </div>
-      </Router>
-    </>
+        </main>
+
+        <Footer mode={mode} />
+      </div>
+    </Router>
   );
 }
 
