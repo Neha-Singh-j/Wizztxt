@@ -2,12 +2,14 @@
 # 🚀 WizzText - Ultimate Text Transformation Toolkit  
 
 **Power up your text processing** with WizzText – a feature-rich React application that helps you analyze, transform, and manipulate text like a pro!  
+---
+**Live Demo**
+https://wizztxt.vercel.app/
+
+---
 
 ![Screenshot 2025-06-20 085431](https://github.com/user-attachments/assets/9bd0e71d-5755-4db2-b880-69210f68c3cb)
 ---
-**Dark Mode**
-
-![Screenshot 2025-06-20 085359](https://github.com/user-attachments/assets/a1b8d2d8-66d4-4741-aba7-3c38bed38f72)
 ## ✨ Features  
 
 ### 🔠 **Text Transformations**  
