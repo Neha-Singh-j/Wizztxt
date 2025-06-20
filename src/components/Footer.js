@@ -154,13 +154,13 @@ export default function Footer({ mode }) {
                 } transition-colors duration-200`}
               >
                 <FaPhone className="mr-3" />
-                +1 (234) 567-890
+                +91 8923XXXXXX
               </a>
               <div className={`flex items-start text-lg ${
                 mode === 'dark' ? 'text-purple-300' : 'text-blue-700'
               }`}>
                 <FaMapMarkerAlt className="mr-3 mt-1 flex-shrink-0" />
-                <span>123 Tech Street, Silicon Valley, CA 94000</span>
+                <span>123 Tech Street, New Delhi, 8080</span>
               </div>
             </div>
           </div>
